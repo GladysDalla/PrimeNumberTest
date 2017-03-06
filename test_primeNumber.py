@@ -13,7 +13,8 @@ class TestPrimeNumbers(unittest.TestCase):
 	def test_negative_number(self):
 		"""tests when negative number is passed"""
 		self.assertFalse(is_prime_number(-2,10))
-
+	def test_if_negative_number_in_n_args(self):
+		self.assertFalse(is_prime_number(2,-10))
 
 if __name__ == '__main__':
     unittest.main()
