@@ -15,6 +15,9 @@ class TestPrimeNumbers(unittest.TestCase):
 		self.assertFalse(is_prime_number(-2,10))
 	def test_if_negative_number_in_n_args(self):
 		self.assertFalse(is_prime_number(2,-10))
+	def test_using_strings(self):
+		"""tests when strings are passed"""
+		self.assertFalse(is_prime_number('two','ten'))
 
 if __name__ == '__main__':
     unittest.main()
