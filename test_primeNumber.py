@@ -9,7 +9,12 @@ class TestPrimeNumbers(unittest.TestCase):
 		self.assertTrue(is_prime_number(2, 10))
 	def test_input_is_not_string(self):
 		"""tests if string is passed"""
-		self.assertRaises(ValueError,is_prime_number('this', 10))
+		self.assertFalse(is_prime_number('this', 10))
+	def test_negative_number(self):
+		"""tests when negative number is passed"""
+		self.assertFalse(is_prime_number(-2,10))
+
+
 if __name__ == '__main__':
     unittest.main()
 

@@ -1,4 +1,6 @@
 def is_prime_number():
+	"""finds prime numbers  between range 0 and n"""
+	
 	for number in range (0,n):
 		if number > 1:
 			for i in range (2,number):
