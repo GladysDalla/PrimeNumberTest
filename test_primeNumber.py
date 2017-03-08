@@ -6,18 +6,19 @@ class TestPrimeNumbers(unittest.TestCase):
 
 	def test_method_is_true(self):
 		"""tests if the output ranging from 2 to 10 are prime numbers"""
-		self.assertTrue(is_prime_number(2, 10))
+		self.assertTrue (is_prime_number(10))
 	def test_input_is_not_string(self):
 		"""tests if string is passed"""
-		self.assertFalse(is_prime_number('this', 10))
+		self.assertFalse (is_prime_number('this'))
 	def test_negative_number(self):
 		"""tests when negative number is passed"""
-		self.assertFalse(is_prime_number(-2,10))
-	def test_if_negative_number_in_n_args(self):
-		self.assertFalse(is_prime_number(2,-10))
+		self.assertFalse (is_prime_number(-10))
+	def test_if_zero_is_entered(self):
+		"""tests if 0 is entered """
+		self.assertFalse (is_prime_number(0))
 	def test_using_strings(self):
 		"""tests when strings are passed"""
-		self.assertFalse(is_prime_number('two','ten'))
+		self.assertFalse (is_prime_number('ten'))
 
 if __name__ == '__main__':
     unittest.main()
